@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="assets/music-playing.png" width="300">
+  <img src="assets/no-music.png" width="300">
+</p>
+
 # Spotify iPod-style Übersicht widget for ios
 Custom Übersicht widget that displays current Spotify playback, including track metadata, album artwork, playback progress, and basic controls.
 
