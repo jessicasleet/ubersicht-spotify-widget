@@ -84,6 +84,10 @@ else
     fi
 fi
 "
+-- stops code breaking if there's a quote mark in the metadata
+set trackname to do shell script "echo " & quoted form of trackname & " | sed 's/\"/\\\\\"/g'"
+set artistname to do shell script "echo " & quoted form of artistname & " | sed 's/\"/\\\\\"/g'"
+set albumname to do shell script "echo " & quoted form of albumname & " | sed 's/\"/\\\\\"/g'"
 
 -- remove newline characters from base-64 output (makes sure json string is valid)
 set base64Art to do shell script "echo " & quoted form of base64Art & " | tr -d '\\n'"
